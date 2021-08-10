@@ -20,6 +20,8 @@ const server = Net.createServer((s) => {
     })
     s.on('data', (k) => {
         console.log('coming data ', k.toString());
+        console.log("gps", k);
+
 
     });
     s.on('connect', (e) => {
